@@ -1,5 +1,6 @@
 function transformToNumber(value) {
-  return +value;
+	if (isNaN(value) || typeof value === "object") return NaN;
+	return +value;
 }
 
 exports.transformToNumber = transformToNumber;

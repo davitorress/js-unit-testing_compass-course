@@ -13,5 +13,6 @@ export function cleanNumbers(numberValues) {
 		validateNumber(number);
 		numbers.push(number);
 	}
+	return numbers;
 }
 
